@@ -1,0 +1,86 @@
+body {
+	color: black;
+	font-family: verdana, tahoma, arial, sans-serif;
+	font-size: 16px;
+	width: 900px;
+	margin: 0 auto;
+	background-color: #bcbcbc;
+}
+
+a:link{
+	color: #006cff;
+}
+
+a:visted{
+	color: #ff0000;
+}
+
+a:hover{
+	color: #7200ff;
+	background-color: #fff;
+}
+
+a:active{
+	color: #e6e6e6;
+}
+
+nav li {
+	float: left;
+	padding: 10px;
+}
+
+img {
+	border: 1px dashed #000;
+	float: left;
+}
+
+.endfloat {
+	clear: left;
+}
+
+p {
+	color: #222;
+	font-size: 12px;
+	line-height: 24px;
+	text-indent: 20px;
+}
+
+h1,h2,h3 {
+	font-family: "Passion One", impact, cursive, tahoma, verdana;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 10px;
+	color: #000;
+	text-shadow: 2px 2px 2px #555;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	font-family: verdana, tahoma, sans-serif;
+	color: blue;
+	text-decoration: underline;
+}
+
+.gallery {
+	list-style-type: none;
+	width: 650px;
+	height: 280px;
+	margin: 15px auto;
+	padding: 20px auto;
+	float: left;
+}
+
+.clearFix {
+	clear: both;
+}
+
+div {
+	-moz-column-count: 3;
+	-ms-column-count: 3;
+	-web-column-count: 3;
+	-o-column-count: 3;
+	-khtml-column-count: 3;
+}
