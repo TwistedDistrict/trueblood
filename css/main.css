@@ -1,14 +1,24 @@
 body {
 	color: black;
 	font-family: verdana, tahoma, arial, sans-serif;
-	font-size: 16px;
-	width: 900px;
-	margin: 0 auto;
+	font-size: 1.13em;
+	width: 100% /* 950px; */
+	margin: 20px auto;
+	padding: 20px 20px 20px 20px;
 	background-color: #bcbcbc;
+}
+
+section {
+	float: left;
+	width: 63.15789474%; /*600px*/
+	border: 1px solid #777;
+	margin: 20px auto;
+	padding: 20px 20px 20px 20px;
 }
 
 a:link{
 	color: #006cff;
+	text-align: center;
 }
 
 a:visted{
@@ -26,7 +36,11 @@ a:active{
 
 nav li {
 	float: left;
-	padding: 10px;
+	padding: 5px;
+	background: #888;
+	width: 225px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 img {
@@ -40,7 +54,7 @@ img {
 
 p {
 	color: #222;
-	font-size: 12px;
+	font-size: .75em;
 	line-height: 24px;
 	text-indent: 20px;
 }
@@ -48,7 +62,7 @@ p {
 h1,h2,h3 {
 	font-family: "Passion One", impact, cursive, tahoma, verdana;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 3.125em;
 	line-height: 10px;
 	color: #000;
 	text-shadow: 2px 2px 2px #555;
@@ -69,7 +83,7 @@ li {
 	width: 650px;
 	height: 280px;
 	margin: 15px auto;
-	padding: 20px auto;
+	padding: 20px 20px 20px 20px;
 	float: left;
 }
 
@@ -83,4 +97,36 @@ div {
 	-web-column-count: 3;
 	-o-column-count: 3;
 	-khtml-column-count: 3;
+}
+
+/*Tablet Portrait size to standard 960 [devices & browsers]*/
+@media screen and (min-width: 768px) and (max-width: 959px){
+	body {background-color: #e6e6e6}
+	p {color: #000;}
+	img {border: 1px solid #000;} 
+}
+
+/*Mobile landscape size to tablet portrait [devices and browsers]*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	body {background-color: #ff0000}
+	section {border: none}
+	p {color: #000;}
+	img {border: 1px solid #000;} 
+	h1, h2, h3 {font-family: impact, verdana, tahoma, sans-serif;
+				text-shadow: none;
+				color: #222;
+				line-height: 35px;}
+}
+
+/*Mobile portrait size to mobile landscape size [devices and browsers]*/
+@media only screen and (max-width: 479px){
+	body {background-color: #003cff}
+	body, section {float: none}
+	section {border: none}
+	p {color: #000;}
+	img {border: 1px solid #000;} 
+	h1, h2, h3 {font-family: impact, verdana, tahoma, sans-serif;
+				text-shadow: none;
+				color: #222;
+				line-height: 35px;}
 }
