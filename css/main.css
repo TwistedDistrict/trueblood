@@ -13,16 +13,12 @@ section {
 	width: 63.15789474%; /*600px*/
 	border: 1px solid #777;
 	margin: 20px auto;
-	padding: 20px 20px 20px 20px;
+	padding: .8em;
 }
 
 a:link{
 	color: #006cff;
 	text-align: center;
-}
-
-a:visted{
-	color: #ff0000;
 }
 
 a:hover{
@@ -46,6 +42,7 @@ nav li {
 img {
 	border: 1px dashed #000;
 	float: left;
+	padding 1.0em;
 }
 
 .endfloat {
@@ -59,12 +56,12 @@ p {
 	text-indent: 20px;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
 	font-family: "Passion One", impact, cursive, tahoma, verdana;
 	font-weight: bold;
 	font-size: 3.125em;
-	line-height: 10px;
-	color: #000;
+	line-height: 15px;
+	color: #111;
 	text-shadow: 2px 2px 2px #555;
 }
 
@@ -98,6 +95,36 @@ div {
 	-o-column-count: 3;
 	-khtml-column-count: 3;
 }
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	border:2px solid #000;
+	padding: 0.5em;
+}
+
+th {
+	border: 2px solid #000;
+	text-align: left;
+	background-color: #999;
+	color: #003cff;
+	padding: 0.5em;
+}
+
+.odd {
+	background-color: #e6e6e6;
+}
+
+form {
+	border: 1px dotted #000;
+	width: 27em;
+	padding: 0.5em;
+}
+
+
+
 
 /*Tablet Portrait size to standard 960 [devices & browsers]*/
 @media screen and (min-width: 768px) and (max-width: 959px){
